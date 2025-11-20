@@ -39,7 +39,7 @@ export default function Home() {
 
   const [isAdmin, setIsAdmin] = useState(false);
 
-  const types = ["IMIC", "SA-ADIYA", "MADRASSA", "SSF"];
+const types = process.env.NEXT_PUBLIC_TYPES.split(",");
 
   // --- Auth check (simple) ---
 
